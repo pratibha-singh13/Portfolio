@@ -16,7 +16,7 @@ const educationDetails = [
     institution: "St. Peter’s Engineering College, Hyderabad",
     grades: "CGPA: 9.11",
     year: "2022 - Present",
-    desc: "Pursuing specialization in Artificial Intelligence and Machine Learning with consistent academic excellence over 5 semesters.",
+    desc: "Pursuing Bachelor's in Computer Science specializing in Artificial Intelligence and Machine Learning. I've completed 6 semesters with a CGPA of 9.11.",
   },
   {
     logo: logo2,
@@ -24,7 +24,7 @@ const educationDetails = [
     institution: "Sivasivani Junior College, Hyderabad",
     grades: "Score: 92.1%",
     year: "2020 - 2022",
-    desc: "Focused on Mathematics, Physics, and Chemistry during my higher secondary education.",
+    desc: "Completed Intermediate (Class XII) in MPC stream with Mathematics, Physics, and Chemistry.",
   },
   {
     logo: logo3,
@@ -32,7 +32,7 @@ const educationDetails = [
     institution: "Sadashiva High School, Hyderabad",
     grades: "GPA: 10.0",
     year: "2019 - 2020",
-    desc: "Completed SSC with distinction, building a strong academic foundation.",
+    desc: "Completed SSC (Class X) under the Board of Secondary Education, Telangana in 2020",
   },
 ];
 
