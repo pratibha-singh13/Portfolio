@@ -13,9 +13,7 @@ const fadeIn = {
 
 const About = () => {
   const info = [
-    { text: "Completed Projects", count: "15" },
-    { text: "Internships", count: "2" },
-    { text: "Certifications", count: "5" },
+    { text: "Completed Projects", count: "6" },
   ];
 
   const googleDriveLink =
