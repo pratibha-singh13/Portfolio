@@ -3,10 +3,17 @@ import my2 from "../assets/images/my2.png";
 import Type from "./Type";
 
 const socialMediaLinks = [
-  "https://www.instagram.com/_aaaryaan__/",
-  "https://github.com/aryyan0701",
-  "https://www.linkedin.com/in/aryan-kadam-568083204/",
-  "https://twitter.com/aaryyan_",
+  "https://www.linkedin.com/in/pratibha-singh013",
+  "https://github.com/pratibha-singh13",
+  "mailto:pratibhasinghh13@gmail.com",
+  "https://www.instagram.com/pratibha._.013",
+];
+
+const social_media = [
+  "logo-linkedin",
+  "logo-github",
+  "mail-outline",
+  "logo-instagram",
 ];
 
 const Hero = () => {
@@ -18,15 +25,10 @@ const Hero = () => {
   }, []);
 
   const scrollToContact = () => {
-    contactRef.current.scrollIntoView({ behavior: "smooth" });
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
-
-  const social_media = [
-    "logo-instagram",
-    "logo-github",
-    "logo-linkedin",
-    "logo-twitter",
-  ];
 
   return (
     <section
@@ -40,7 +42,6 @@ const Hero = () => {
       {/* Image */}
       <div className="flex-1 flex items-center justify-center h-full relative group">
         <div className="relative w-52 h-52 md:w-64 md:h-64">
-
           {/* Glowing animated border */}
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500 to-purple-600 blur-xl opacity-70 group-hover:opacity-90 transition duration-500 animate-spin-slow"></div>
 
@@ -92,6 +93,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-cyan-400 transform hover:scale-110 transition duration-300 cursor-pointer"
+              aria-label={`Link to ${icon.replace("logo-", "")}`} // accessibility
             >
               <ion-icon name={icon}></ion-icon>
             </a>
