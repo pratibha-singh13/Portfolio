@@ -26,6 +26,7 @@ const Navbar = () => {
         <div className="mx-7">
           <h4 className="text-4xl font-extrabold tracking-wide uppercase">
             <span className="text-cyan-500">Pratibha</span>
+            <b> </b>
             <span className="text-cyan-500">Singh</span>
           </h4>
         </div>
