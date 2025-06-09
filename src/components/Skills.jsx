@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const categorizedSkills = {
-  "Languages": ["c", "cpp", "python", "java", "javascript"],
-  "Frontend": ["react"],
+  "Languages": ["c", "cpp", "python", "java"],
+  "Frontend": ["html", "css", "javascript", "react"],
   "Backend": ["nodejs", "express"],
   "Databases": ["mongodb", "mysql"],
   "Cloud": ["aws"],
@@ -22,13 +22,13 @@ const fadeIn = (i = 0) => ({
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-gray-900 text-white py-16 px-4">
+    <section id="skills" className="bg-[#0f172a] text-white py-16 px-4">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold">
           My <span className="text-cyan-400">Skills</span>
         </h2>
         <p className="text-gray-400 mt-2 text-lg">
-          Categorized tech stack with colorful icons
+          Categorized tech stack with glowing icons
         </p>
       </div>
 
@@ -40,7 +40,7 @@ const Skills = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-cyan-600/40 transition-shadow duration-300"
+            className="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-gray-700 hover:border-cyan-400 transition-all duration-300 shadow-lg hover:shadow-cyan-500/40"
           >
             <h3 className="text-2xl font-semibold text-cyan-300 mb-6 text-center border-b border-cyan-600 pb-2">
               {category}
@@ -50,7 +50,7 @@ const Skills = () => {
                 <motion.div
                   key={iconName}
                   variants={fadeIn(idx)}
-                  className="flex flex-col items-center w-24 p-4 bg-gray-700 hover:bg-gray-600 rounded-xl transition-colors"
+                  className="flex flex-col items-center w-24 p-4 bg-gray-700 hover:bg-gray-600 rounded-xl border border-transparent hover:border-cyan-400 shadow-md hover:shadow-cyan-400/30 transition-all duration-300"
                 >
                   <img
                     src={`https://skillicons.dev/icons?i=${iconName}`}

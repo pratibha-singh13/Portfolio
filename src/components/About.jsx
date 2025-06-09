@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import coderImage from "../assets/images/coder.png"; // ensure this file exists
 
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -34,52 +35,54 @@ const About = () => {
         variants={fadeIn}
       >
         <h3 className="text-4xl md:text-5xl font-bold">
-          About <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Me</span>
+          About{" "}
+          <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            Me
+          </span>
         </h3>
         <p className="text-gray-400 text-lg mt-3">My Introduction</p>
+        <hr className="border-cyan-600 w-1/4 mx-auto mt-6" />
       </motion.div>
 
       <div className="max-w-6xl mx-auto mt-12 flex flex-col md:flex-row items-center gap-12">
-        {/* Optional Avatar */}
+        {/* Left Side Image */}
         <motion.div
-          className="w-full md:w-1/2"
+          className="w-full md:w-1/2 flex justify-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeIn}
         >
           <img
-            src="https://avatars.githubusercontent.com/u/110776597?v=4"
-            alt="profile"
-            className="rounded-xl shadow-xl mx-auto md:mx-0 w-72 md:w-96"
+            src={coderImage}
+            alt="coder"
+            className="rounded-xl shadow-xl w-72 md:w-96 border-2 border-cyan-500 shadow-cyan-400/30"
           />
         </motion.div>
 
-        {/* About Content */}
+        {/* Right Side Content Box */}
         <motion.div
-          className="w-full md:w-1/2 bg-white/5 backdrop-blur-md p-6 rounded-xl shadow-lg"
+          className="w-full md:w-1/2 p-6 rounded-xl border border-gray-700 hover:border-cyan-400 bg-white/5 backdrop-blur-md shadow-lg hover:shadow-cyan-500/40 transition-all duration-300"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeIn}
         >
           <p className="text-gray-300 text-justify leading-7">
-            Hello! I'm <strong>Pratibha Singh</strong>, a passionate and detail-oriented Computer Science undergraduate with a strong foundation in full-stack web development. I specialize in building responsive, secure, and user-centric applications using the <strong>MERN stack</strong>.
+            Hello! I'm <strong>Pratibha Singh</strong>, a Computer Science undergraduate with a strong foundation in full-stack web development, particularly in the <strong>MERN stack</strong>. I specialize in creating scalable, secure, and user-focused web applications that reflect both functionality and design aesthetics.
             <br /><br />
-            My work reflects a blend of clean architecture, scalable design, and modern UI/UX principles. I take pride in transforming ideas into well-engineered digital products that are both functional and visually appealing.
+            My development process blends clean architecture with responsive UI/UX principles. I write maintainable code with attention to performance, accessibility, and real-world usability.
             <br /><br />
-            With hands-on experience across frontend and backend technologies, I'm continuously evolving my skills in <strong>Data Structures & Algorithms (Java)</strong>, <strong>Cloud Computing</strong>, and emerging fields like <strong>AI/ML</strong>. I value code quality, performance, and collaboration in every project I take on.
-            <br /><br />
-            I’m driven by a commitment to continuous learning and delivering solutions that create real impact.
+            I’m consistently expanding my expertise in <strong>Data Structures & Algorithms (Java)</strong>, <strong>Cloud Technologies</strong>, and <strong>AI/ML</strong> to stay ahead in a rapidly evolving tech landscape. My core strengths include adaptability, continuous learning, and a passion for delivering impactful digital experiences.
           </p>
-
 
           {/* Stats */}
           <div className="flex justify-around text-center mt-8">
             {info.map((content, i) => (
               <div key={i}>
                 <h3 className="text-3xl font-bold text-cyan-400">
-                  {content.count}<span className="text-white">+</span>
+                  {content.count}
+                  <span className="text-white">+</span>
                 </h3>
                 <p className="text-sm text-gray-400 mt-1">{content.text}</p>
               </div>
