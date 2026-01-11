@@ -8,7 +8,7 @@ import projectTwo from "../assets/images/project-2.png"; // Streamify
 import projectThree from "../assets/images/project-3.png"; // POD
 import projectFour from "../assets/images/project-4.png"; // Gender-Age
 import projectFive from "../assets/images/project-5.png"; // Mental Health Companion
-import projectSix from "../assets/images/project-6.png"; // Cardiovascular Disease Prediction
+import projectSix from "../assets/images/Project-6.png"; // Cardiovascular Disease Prediction
 
 const projects = [
   {
