@@ -7,6 +7,8 @@ import projectOne from "../assets/images/project-1.png"; // SmartChat
 import projectTwo from "../assets/images/project-2.png"; // Streamify
 import projectThree from "../assets/images/project-3.png"; // POD
 import projectFour from "../assets/images/project-4.png"; // Gender-Age
+import projectFive from "../assets/images/project-5.png"; // Mental Health Companion
+import projectSix from "../assets/images/project-6.png"; // Cardiovascular Disease Prediction
 
 const projects = [
   {
@@ -33,13 +35,29 @@ const projects = [
     tech: ["Python", "OpenCV", "Deep Learning", "Pretrained Models"],
   },
   {
-    img: projectFour, // keep your existing image import here
+    img: projectFour, 
     name: "POD T-Shirt Customizer",
     desc: "A t-shirt customization page for a print-on-demand store, allowing users to upload images, enter custom text, and set size preferences with a responsive, switchable UI.",
     github_link: "https://github.com/pratibha-singh13/POD-T-Shirt-Customizer-App.git",
     live_link: "https://pod-t-shirt-customizer-app.pages.dev/",
     tech: ["React", "TailwindCSS", "React Hook Form", "Vite", "Cloudflare Pages"],
   },
+  {
+  img: projectFive, 
+  name: "Mental Health Companion",
+  desc: "A full-stack mental wellness platform that helps users track moods, build self-care habits, and engage in anonymous peer support. It offers mood trends, habit streaks, reflections, and a secure community wall with JWT authentication and media uploads.",
+  github_link: "https://github.com/pratibha-singh13/Mental-Health-Companion",
+  live_link: "https://inner-heal.vercel.app/",
+  tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT", "Cloudinary"],
+ },
+
+{
+  img: projectSix,
+  name: "AI-Based ECG Disease Prediction",
+  desc: "An AI-powered system that classifies ECG images into cardiac conditions like myocardial infarction and arrhythmia using a ResNet50-based CNN. It includes a Gradio web interface and provides condition-specific medical recommendations with confidence scores.",
+  github_link: "https://github.com/pratibha-singh13/AI-Based-ECG-Analysis-for-Cardiovascular-Disease-Prediction",
+  tech: ["Python", "TensorFlow", "Keras", "CNN", "ResNet50", "Gradio", "OpenCV"],
+}
 
 
 ];
