@@ -34,7 +34,7 @@ const iconMap = {
   css: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
 
   nodejs: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-  express: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+  express: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
 
   mongodb: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   mysql: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
@@ -47,7 +47,7 @@ const iconMap = {
   excel: "https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg",
 
   powerbi: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Power_BI_logo.svg",
-  tableau: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png",
+  tableau: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg",
 
   apachespark: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg",
   databricks: "https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png",
@@ -58,8 +58,8 @@ const iconMap = {
   opencv: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
   n8n: "https://upload.wikimedia.org/wikipedia/commons/3/33/N8n_logo.svg",
 
-  aws: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
-  azure: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg",
+  aws: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+  azure: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
   firebase: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
 
   git: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
@@ -115,7 +115,12 @@ const Skills = () => {
                   <img
                     src={iconMap[iconName]}
                     alt={iconName}
+                    loading="lazy"
                     className="w-12 h-12 object-contain"
+                    onError={(e) => {
+                      e.currentTarget.src =
+                        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/code/code-original.svg";
+                    }}
                   />
                   <p className="mt-2 text-sm capitalize text-gray-200">
                     {iconName.replace(/-/g, " ")}
