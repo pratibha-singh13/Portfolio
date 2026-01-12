@@ -3,27 +3,24 @@ import { motion } from "framer-motion";
 
 const categorizedSkills = {
   "Frontend": ["react", "javascript", "html", "css"],
-
   "Backend": ["nodejs", "express", "mongodb", "mysql", "postgres"],
-
   "Programming Languages": ["python", "java", "c", "cpp"],
-
   "Data & Analytics": ["pandas", "numpy", "matplotlib", "seaborn", "excel"],
-
-  "Data Visualization": ["powerbi", "tableau"], 
-
+  "Data Visualization": ["powerbi", "tableau"],
   "Data Engineering": ["pyspark", "databricks", "postgres", "docker"],
-
   "AI & Machine Learning": ["scikit-learn", "tensorflow", "opencv"],
-
   "Cloud & Platforms": ["aws", "azure", "firebase"],
-
   "Tools & Workflow": ["git", "github", "vscode", "postman", "jupyter"],
-
   "Platforms": ["linux"]
 };
 
-
+const iconSources = {
+  powerbi: "https://cdn.simpleicons.org/powerbi",
+  tableau: "https://cdn.simpleicons.org/tableau",
+  databricks: "https://cdn.simpleicons.org/databricks",
+  pyspark: "https://cdn.simpleicons.org/apachespark",
+  azure: "https://cdn.simpleicons.org/microsoftazure",
+};
 
 const fadeIn = (i = 0) => ({
   hidden: { opacity: 0, y: 20 },
@@ -67,9 +64,12 @@ const Skills = () => {
                   className="flex flex-col items-center w-24 p-4 bg-gray-700 hover:bg-gray-600 rounded-xl border border-transparent hover:border-cyan-400 shadow-md hover:shadow-cyan-400/30 transition-all duration-300"
                 >
                   <img
-                    src={`https://skillicons.dev/icons?i=${iconName}`}
+                    src={iconSources[iconName] || `https://skillicons.dev/icons?i=${iconName}`}
                     alt={iconName}
                     className="w-12 h-12"
+                    onError={(e) => {
+                      e.currentTarget.src = "https://cdn.simpleicons.org/code";
+                    }}
                   />
                   <p className="mt-2 text-sm capitalize">{iconName}</p>
                 </motion.div>
