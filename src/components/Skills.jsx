@@ -3,13 +3,9 @@ import { motion } from "framer-motion";
 
 const categorizedSkills = {
   "Programming Languages": ["python", "java", "c", "cpp"],
-
   "Frontend": ["react", "javascript", "html", "css"],
-
   "Backend": ["nodejs", "express"],
-
   "Databases": ["mongodb", "mysql", "postgres"],
-
   "Data Analytics & Visualization": [
     "pandas",
     "numpy",
@@ -19,25 +15,19 @@ const categorizedSkills = {
     "powerbi",
     "tableau",
   ],
-
   "Data Engineering": ["apachespark", "databricks", "docker", "postgres"],
-
-  "AI & Machine Learning": ["scikit-learn", "tensorflow", "opencv", "n8n", "pandas"],
-
+  "AI & Machine Learning": ["scikit-learn", "tensorflow", "opencv"],
   "Cloud & Platforms": ["aws", "azure", "firebase"],
-
   "Tools & Workflow": ["git", "github", "vscode", "postman", "jupyter"],
-
   "Platforms": ["linux"],
 };
 
 const iconSources = {
-  powerbi: "https://cdn.simpleicons.org/powerbi",
-  tableau: "https://cdn.simpleicons.org/tableau",
-  databricks: "https://cdn.simpleicons.org/databricks",
-  apachespark: "https://cdn.simpleicons.org/apachespark",
-  azure: "https://cdn.simpleicons.org/microsoftazure",
-  n8n: "https://cdn.simpleicons.org/n8n",
+  powerbi: "https://cdn.simpleicons.org/powerbi/F2C811",
+  tableau: "https://cdn.simpleicons.org/tableau/E97627",
+  databricks: "https://cdn.simpleicons.org/databricks/FF3621",
+  apachespark: "https://cdn.simpleicons.org/apachespark/E25A1C",
+  azure: "https://cdn.simpleicons.org/microsoftazure/0078D4",
 };
 
 const fadeIn = (i = 0) => ({
@@ -84,12 +74,12 @@ const Skills = () => {
                   <img
                     src={
                       iconSources[iconName] ||
-                      `https://skillicons.dev/icons?i=${iconName}`
+                      `https://skillicons.dev/icons?i=${iconName}&theme=light`
                     }
                     alt={iconName}
-                    className="w-12 h-12 bg-white/10 p-1 rounded-lg"
+                    className="w-12 h-12 bg-white/20 p-2 rounded-xl"
                     onError={(e) => {
-                      e.currentTarget.src = "https://cdn.simpleicons.org/code";
+                      e.currentTarget.src = "https://cdn.simpleicons.org/code/ffffff";
                     }}
                   />
                   <p className="mt-2 text-sm capitalize text-gray-200">
