@@ -2,26 +2,28 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const categorizedSkills = {
-  "Languages": ["c", "cpp", "python", "java", "javascript"],
-  
-  "Frontend": ["html", "css", "javascript", "react", "tailwind"],
-  
-  "Backend": ["nodejs", "express", "fastapi"],
-  
-  "Databases": ["mongodb", "mysql", "postgres"],
-  
-  "Data Analysis": ["python", "pandas", "numpy", "matplotlib", "seaborn", "excel"],
-  
-  "Data Engineering": ["airflow", "spark", "kafka", "hadoop"],
-  
-  "AI / Machine Learning": ["scikit-learn", "tensorflow", "pytorch", "opencv"],
-  
-  "Cloud & DevOps": ["aws", "docker", "firebase", "githubactions"],
-  
-  "Tools & IDEs": ["git", "github", "vscode", "postman", "jupyter"],
-  
-  "Platforms & Systems": ["linux", "bash"]
+  "Frontend": ["react", "javascript", "html", "css"],
+
+  "Backend": ["nodejs", "express", "mongodb", "mysql", "postgres"],
+
+  "Programming Languages": ["python", "java", "c", "cpp"],
+
+  "Data & Analytics": ["pandas", "numpy", "matplotlib", "seaborn", "excel"],
+
+  "Data Visualization": ["powerbi", "tableau"], 
+
+  "Data Engineering": ["pyspark", "databricks", "postgres", "docker"],
+
+  "AI & Machine Learning": ["scikit-learn", "tensorflow", "opencv"],
+
+  "Cloud & Platforms": ["aws", "azure", "firebase"],
+
+  "Tools & Workflow": ["git", "github", "vscode", "postman", "jupyter"],
+
+  "Platforms": ["linux"]
 };
+
+
 
 const fadeIn = (i = 0) => ({
   hidden: { opacity: 0, y: 20 },
