@@ -25,7 +25,7 @@ const categorizedSkills = {
 const iconMap = {
   python: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   java: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-  c: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+  c: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/500px-C_Programming_Language.svg.png",
   cpp: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
 
   react: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
@@ -40,25 +40,25 @@ const iconMap = {
   mysql: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
   postgres: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
 
-  pandas: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg",
-  numpy: "https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg",
+  pandas: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1280px-Pandas_logo.svg.png",
+  numpy: "https://media.licdn.com/dms/image/v2/D5612AQFSTglfKdI9eg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1708971797430?e=2147483647&v=beta&t=iZKe_LBwW0NSHcz1V9_LsKskeje_BYusBCoctWYnWJ0",
   matplotlib: "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg",
-  seaborn: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Seaborn_logo.svg",
+  seaborn: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw1-oC4gtSXSqISRSwdiEOaKYcSRmP5L0j2Q&s",
   excel: "https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg",
 
-  powerbi: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Power_BI_logo.svg",
-  tableau: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg",
+  powerbi: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4hzOS5W2J2PjB4JssJDrmx1b7xFn0yt0uCw&s",
+  tableau: "https://w7.pngwing.com/pngs/815/646/png-transparent-tableau-full-logo-tech-companies-thumbnail.png",
 
-  apachespark: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg",
-  databricks: "https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png",
+  apachespark: "https://lumendata.com/wp-content/uploads/2025/05/What-is-Apache-Spark.png",
+  databricks: "https://assets.bizclikmedia.net/900/49a0f0dfb9eba428c715a5332f7dde39:ab928a3a2fbae58cf9cd95d14e06da63/databricks.webp",
   docker: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
 
   "scikit-learn": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
   tensorflow: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
   opencv: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
-  n8n: "https://upload.wikimedia.org/wikipedia/commons/3/33/N8n_logo.svg",
+  n8n: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcu0T_eMA2SxKb-gXGf6PcsAsPkYBcAA79Eg&s",
 
-  aws: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+  aws: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
   azure: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
   firebase: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
 
