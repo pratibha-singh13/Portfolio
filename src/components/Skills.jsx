@@ -2,13 +2,25 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const categorizedSkills = {
-  "Languages": ["c", "cpp", "python", "java"],
-  "Frontend": ["html", "css", "javascript", "react"],
-  "Backend": ["nodejs", "express"],
-  "Databases": ["mongodb", "mysql"],
-  "Cloud": ["aws"],
-  "Tools & IDEs": ["git", "github", "vscode"],
-  "Platforms": ["firebase"]
+  "Languages": ["c", "cpp", "python", "java", "javascript"],
+  
+  "Frontend": ["html", "css", "javascript", "react", "tailwind"],
+  
+  "Backend": ["nodejs", "express", "fastapi"],
+  
+  "Databases": ["mongodb", "mysql", "postgres"],
+  
+  "Data Analysis": ["python", "pandas", "numpy", "matplotlib", "seaborn", "excel"],
+  
+  "Data Engineering": ["airflow", "spark", "kafka", "hadoop"],
+  
+  "AI / Machine Learning": ["scikit-learn", "tensorflow", "pytorch", "opencv"],
+  
+  "Cloud & DevOps": ["aws", "docker", "firebase", "githubactions"],
+  
+  "Tools & IDEs": ["git", "github", "vscode", "postman", "jupyter"],
+  
+  "Platforms & Systems": ["linux", "bash"]
 };
 
 const fadeIn = (i = 0) => ({
