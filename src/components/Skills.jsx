@@ -2,24 +2,42 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const categorizedSkills = {
-  "Frontend": ["react", "javascript", "html", "css"],
-  "Backend": ["nodejs", "express", "mongodb", "mysql", "postgres"],
   "Programming Languages": ["python", "java", "c", "cpp"],
-  "Data & Analytics": ["pandas", "numpy", "matplotlib", "seaborn", "excel"],
-  "Data Visualization": ["powerbi", "tableau"],
-  "Data Engineering": ["pyspark", "databricks", "postgres", "docker"],
-  "AI & Machine Learning": ["scikit-learn", "tensorflow", "opencv"],
+
+  "Frontend": ["react", "javascript", "html", "css"],
+
+  "Backend": ["nodejs", "express"],
+
+  "Databases": ["mongodb", "mysql", "postgres"],
+
+  "Data Analytics & Visualization": [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "excel",
+    "powerbi",
+    "tableau",
+  ],
+
+  "Data Engineering": ["apachespark", "databricks", "docker", "postgres"],
+
+  "AI & Machine Learning": ["scikit-learn", "tensorflow", "opencv", "n8n", "pandas"],
+
   "Cloud & Platforms": ["aws", "azure", "firebase"],
+
   "Tools & Workflow": ["git", "github", "vscode", "postman", "jupyter"],
-  "Platforms": ["linux"]
+
+  "Platforms": ["linux"],
 };
 
 const iconSources = {
   powerbi: "https://cdn.simpleicons.org/powerbi",
   tableau: "https://cdn.simpleicons.org/tableau",
   databricks: "https://cdn.simpleicons.org/databricks",
-  pyspark: "https://cdn.simpleicons.org/apachespark",
+  apachespark: "https://cdn.simpleicons.org/apachespark",
   azure: "https://cdn.simpleicons.org/microsoftazure",
+  n8n: "https://cdn.simpleicons.org/n8n",
 };
 
 const fadeIn = (i = 0) => ({
@@ -27,7 +45,7 @@ const fadeIn = (i = 0) => ({
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, delay: i * 0.2 },
+    transition: { duration: 0.6, delay: i * 0.15 },
   },
 });
 
@@ -59,19 +77,24 @@ const Skills = () => {
             <div className="flex flex-wrap gap-6 justify-center">
               {icons.map((iconName, idx) => (
                 <motion.div
-                  key={iconName}
+                  key={`${category}-${iconName}`}
                   variants={fadeIn(idx)}
-                  className="flex flex-col items-center w-24 p-4 bg-gray-700 hover:bg-gray-600 rounded-xl border border-transparent hover:border-cyan-400 shadow-md hover:shadow-cyan-400/30 transition-all duration-300"
+                  className="flex flex-col items-center w-24 p-4 bg-gray-700/90 hover:bg-gray-600 rounded-xl border border-transparent hover:border-cyan-400 shadow-md hover:shadow-cyan-400/30 transition-all duration-300"
                 >
                   <img
-                    src={iconSources[iconName] || `https://skillicons.dev/icons?i=${iconName}`}
+                    src={
+                      iconSources[iconName] ||
+                      `https://skillicons.dev/icons?i=${iconName}`
+                    }
                     alt={iconName}
-                    className="w-12 h-12"
+                    className="w-12 h-12 bg-white/10 p-1 rounded-lg"
                     onError={(e) => {
                       e.currentTarget.src = "https://cdn.simpleicons.org/code";
                     }}
                   />
-                  <p className="mt-2 text-sm capitalize">{iconName}</p>
+                  <p className="mt-2 text-sm capitalize text-gray-200">
+                    {iconName.replace(/-/g, " ")}
+                  </p>
                 </motion.div>
               ))}
             </div>
