@@ -16,18 +16,59 @@ const categorizedSkills = {
     "tableau",
   ],
   "Data Engineering": ["apachespark", "databricks", "docker", "postgres"],
-  "AI & Machine Learning": ["scikit-learn", "tensorflow", "opencv"],
+  "Artificial Intelligence & Machine Learning": ["scikit-learn", "tensorflow", "opencv", "n8n"],
   "Cloud & Platforms": ["aws", "azure", "firebase"],
   "Tools & Workflow": ["git", "github", "vscode", "postman", "jupyter"],
   "Platforms": ["linux"],
 };
 
-const iconSources = {
-  powerbi: "https://cdn.simpleicons.org/powerbi/F2C811",
-  tableau: "https://cdn.simpleicons.org/tableau/E97627",
-  databricks: "https://cdn.simpleicons.org/databricks/FF3621",
-  apachespark: "https://cdn.simpleicons.org/apachespark/E25A1C",
-  azure: "https://cdn.simpleicons.org/microsoftazure/0078D4",
+const iconMap = {
+  python: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+  java: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+  c: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+  cpp: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+
+  react: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  javascript: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  html: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  css: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+
+  nodejs: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  express: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+
+  mongodb: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  mysql: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  postgres: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+
+  pandas: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg",
+  numpy: "https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg",
+  matplotlib: "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg",
+  seaborn: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Seaborn_logo.svg",
+  excel: "https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg",
+
+  powerbi: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Power_BI_logo.svg",
+  tableau: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png",
+
+  apachespark: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg",
+  databricks: "https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png",
+  docker: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+
+  "scikit-learn": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+  tensorflow: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+  opencv: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
+  n8n: "https://upload.wikimedia.org/wikipedia/commons/3/33/N8n_logo.svg",
+
+  aws: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+  azure: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg",
+  firebase: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+
+  git: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  github: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+  vscode: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+  postman: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+  jupyter: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+
+  linux: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
 };
 
 const fadeIn = (i = 0) => ({
@@ -47,7 +88,7 @@ const Skills = () => {
           My <span className="text-cyan-400">Skills</span>
         </h2>
         <p className="text-gray-400 mt-2 text-lg">
-          Categorized tech stack with glowing icons
+          Categorized tech stack with real logos
         </p>
       </div>
 
@@ -72,15 +113,9 @@ const Skills = () => {
                   className="flex flex-col items-center w-24 p-4 bg-gray-700/90 hover:bg-gray-600 rounded-xl border border-transparent hover:border-cyan-400 shadow-md hover:shadow-cyan-400/30 transition-all duration-300"
                 >
                   <img
-                    src={
-                      iconSources[iconName] ||
-                      `https://skillicons.dev/icons?i=${iconName}&theme=light`
-                    }
+                    src={iconMap[iconName]}
                     alt={iconName}
-                    className="w-12 h-12 bg-white/20 p-2 rounded-xl"
-                    onError={(e) => {
-                      e.currentTarget.src = "https://cdn.simpleicons.org/code/ffffff";
-                    }}
+                    className="w-12 h-12 object-contain"
                   />
                   <p className="mt-2 text-sm capitalize text-gray-200">
                     {iconName.replace(/-/g, " ")}
