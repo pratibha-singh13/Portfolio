@@ -75,13 +75,14 @@ const Hero = () => {
             Connect with Me
           </button>
           <a
-            href="/https://drive.google.com/file/d/1GyS8BukDNugYJCNh8QPEei3AGkjW-iy8/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary px-8 py-3 rounded-lg font-semibold text-white bg-gray-700 hover:bg-gray-600 transition text-lg"
-          >
-            Check Resume
-          </a>
+  href="https://drive.google.com/file/d/1GyS8BukDNugYJCNh8QPEei3AGkjW-iy8/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-primary px-8 py-3 rounded-lg font-semibold text-white bg-gray-700 hover:bg-gray-600 transition text-lg"
+>
+  Check Resume
+</a>
+
         </div>
 
         {/* Social icons */}
