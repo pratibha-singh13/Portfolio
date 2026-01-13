@@ -46,11 +46,11 @@ const iconMap = {
   seaborn: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw1-oC4gtSXSqISRSwdiEOaKYcSRmP5L0j2Q&s",
   excel: "https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg",
 
-  powerbi: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4hzOS5W2J2PjB4JssJDrmx1b7xFn0yt0uCw&s",
+  powerbi: "https://www.smartsheet.com/sites/default/files/2025-04/power-bi.png",
   tableau: "https://w7.pngwing.com/pngs/815/646/png-transparent-tableau-full-logo-tech-companies-thumbnail.png",
 
   apachespark: "https://lumendata.com/wp-content/uploads/2025/05/What-is-Apache-Spark.png",
-  databricks: "https://assets.bizclikmedia.net/900/49a0f0dfb9eba428c715a5332f7dde39:ab928a3a2fbae58cf9cd95d14e06da63/databricks.webp",
+  databricks: "https://www.cegeka.com/hubfs/databricks-logo-1.png?width=500&name=databricks-logo-1.png",
   docker: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
 
   "scikit-learn": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
