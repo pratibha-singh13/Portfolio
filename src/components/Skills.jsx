@@ -88,8 +88,10 @@ const Skills = () => {
           My <span className="text-cyan-400">Skills</span>
         </h2>
         <p className="text-gray-400 mt-2 text-lg">
-          Categorized tech stack with real logos
-        </p>
+  A snapshot of the technologies I work with — across frontend, backend, data, AI, and cloud —
+  to build scalable and practical software systems.
+</p>
+
       </div>
 
       <div className="max-w-6xl mx-auto space-y-12">
